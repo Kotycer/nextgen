@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> workk for trial</title>
+
+</head>
+<style>
+    body {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .words {
+        color: aliceblue;
+        display: flex;
+        font-size: 1.5rem;
+        font-family: sans-serif;
+        font-weight: 600;
+        margin: 18px 35px;
+
+    }
+
+    .navbard {
+        background-color: rgb(105, 34, 175);
+        width: 100%;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbarul {
+        padding: 0px 50px;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .navli {
+        padding: 8px 18px;
+        margin: 0px 8px;
+        font-family: sans-serif;
+        font-size: 1rem;
+        font-weight: 600;
+        border: 2px solid rgb(63, 22, 83);
+        border-radius: 6px;
+    }
+
+    .navli a {
+        text-decoration: none;
+        color: rgb(202, 235, 245);
+    }
+
+    .navli:hover {
+        background-color: rgba(164, 159, 159, 0.217);
+    }
+
+    .searchin {
+        padding: 8px;
+        font-family: sans-serif;
+        font-size: 1rem;
+        border-radius: 5px;
+        margin: 20px 0px 20px 590px;
+    }
+
+    .searchin:hover {
+        background-color: rgb(232, 219, 250);
+    }
+
+    .searbtn {
+        padding: 8px;
+        margin: 0px 0px 0px -4px;
+        border-radius: 5px;
+        font-size: 1rem;
+        font-family: sans-serif;
+        font-weight: 600;
+    }
+
+    .searbtn:hover {
+        background-color: rgb(79, 78, 78);
+        color: rgb(220, 224, 228);
+    }
+
+    .h3word {
+        font-size: 1.2rem;
+        display: flex;
+        margin: 20px;
+        display: flex;
+        margin-left: 400px;
+        margin-right: 400px;
+        margin-top: 50px;
+        border-bottom: 2px solid rgb(196, 195, 195);
+    }
+
+    /* top nabv bar eend  */
+
+    .textcl {
+        display: flex;
+        width: 730px;
+        margin-left: 400px;
+        height: 60px;
+    }
+
+    .btnf {
+        margin-left: 400px;
+        margin-top: 15px;
+        background-color: rgb(204, 144, 248);
+        font-size: 1rem;
+        border: 3px solid rgb(169, 61, 237);
+        padding: 5px;
+    }
+
+    .btnf:hover {
+        background-color: rgb(171, 75, 240);
+        border: 3px solid rgb(221, 171, 252);
+    }
+
+    .divmco {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .divcontent {
+        width: 760px;
+        padding-left: 15px;
+        padding-top: 25px;
+        display: flex;
+        justify-content: left;
+        flex-wrap: wrap;
+        border-top: 1px solid rgb(197, 195, 195);
+    }
+
+    .sdiv {
+        border: 2px solid rgb(165, 162, 162);
+        width: 180px;
+        padding: 10px;
+        border-radius: 6px;
+        margin: 10px;
+    }
+
+    .h4w {
+        font-family: sans-serif;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .divp {
+        font-size: 1rem;
+        font-family: sans-serif;
+    }
+
+    .dbtn {
+        background-color: rgb(222, 174, 245);
+        border: 3px solid rgb(144, 22, 181);
+    }
+
+    .dbtn:hover {
+        background-color: rgb(144, 22, 181);
+        border: 3px solid rgb(222, 174, 245);
+    }
+</style>
+
+<body>
+    <header class="heads">
+        <div class="navbard" id="navbar">
+            <div class="words">
+                Trial-Test
+            </div>
+            <ul class="navbarul" id="navul">
+                <li class="navli"><a href="#">HOME</a></li>
+                <li class="navli"><a href="#">CONTACT</a></li>
+                <li class="navli"><a href="#">ABOUT</a></li>
+            </ul>
+            <div class="search">
+                <input type="text" class="searchin" id="searinp" placeholder="Search Here...">
+                <button class="searbtn" id="seabtn">Search</button>
+            </div>
+        </div>
+    </header>
+    <section>
+        
+        <div class="formdiv" id="divf">
+            <h3 class="h3word">Write Here Your Comments</h3>
+            <textarea name="note" id="textform" cols="30" rows="10" class="textcl"></textarea>
+            <button class="btnf" id="formbtn">Add Comment</button>
+        </div>
+        <div class="divmco">
+            <div class=" divcontent" id="idmo">
+                <ul class="125" id="521">
+                   
+                </ul>
+                <!-- <Div class="sdiv" id="Divco">
+                    <h4 class="h4w">Comment</h4>
+                    <p class="divp">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        mollitia consequuntur excepturi ad,
+                    </p>
+                    <button class="dbtn" id="deltbtn"> Remove</button>
+                </Div> -->
+            </div>
+        </div>
+    </section>
+
+    <script src="JS/javaaa.js"></script>
+</body>
+
+</html>
