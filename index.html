@@ -1,214 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manga Suggestions</title>
-    <link rel="stylesheet" href="CSS/home.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script src="https://kit.fontawesome.com/a5ef0dd20f.js" crossorigin="anonymous"></script>
-    <!-- responsible -->
-    <link rel="stylesheet" media="screen and ( max-width:1150px ) " href="responsible/laptop L.css">
-    <link rel="stylesheet" media="screen and ( max-width:1020px ) " href="responsible/laptop S.css">
-
-    <!-- responsible -->
-
-    <!-- fontconneect -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
-    <!-- fontconneect -->
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Redirecting...</title>
+<style>
+  body {
+    background-color: lightyellow;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .redirect-message {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .countdown {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+  }
+</style>
 </head>
-
 <body>
-    <header>
-        <div class="homehe1" id="homenav">
-            <input type="checkbox" id="menucheck">
-            <label for="menucheck" class="menubtn"><i class="fa-solid fa-bars" id="menu"></i></label>
-            <div class="searchfix">
-                <div class="divsearch1">
-                    <input type="text" placeholder="Search..." class="searchbar" id="searchb">
-                    <i class="fa-solid fa-magnifying-glass" id="searchsum"></i>
-                </div>
-            </div>
-            <div class='reheul'>
-                <ul class="heul">
-                    <li class="hnt"><a href="home.html"><i class="fa-solid fa-house-chimney"></i>HOME</a></li>
-                    <li class="hnt"><a href="Top.html"><i class="fa-solid fa-fire"></i>TOP</a></li>
-                    <li class="hnt"><a href="New.html"><i class="fas fa-tag"></i>NEW</a></li>
-                    <li class="hnt"><a href="Completed.html"><i class="fas fa-list-alt"></i>COMPLETED</a></li>
-                    <li class="hnt"><a href="Video.html"><i class="fa-brands fa-youtube"></i>VIDEO</a></li>
-                </ul>
-                <div class="lognav">
-                    <button class="acbtn" id="login"> <a href="#log">Sign In</a> </button>
-                    <button class="acbtn" id="Signup"> <a href="#sig">Sign Up</a> </button>
-                    <div class="divsearch">
-                        <input type="text" placeholder="Search Here..." class="searchbar" id="searchp" >
-                        <button id="searchsum" type="button" onclick="searchresult()">Search</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+<div class="redirect-message">
+  <h2>Redirecting in</h2>
+</div>
+<div class="countdown" id="countdown">3</div>
 
-    </header>
-    <section class="midbar">
+<script>
+  var countdownElement = document.getElementById('countdown');
+  var count = 3;
 
-        <div class="hedmenu" id="headmenu">
-            <ul class="mediummu">
-                <li class="mnm" id="gen"><a href="#">GENRES<i class="fa-solid fa-play" id="genmore"></i>
-                    </a>
-                    <!-- menu bar -->
-                    <ul class="meul" id="geme">
-                        <li class="mnmg"><a href="#">Adventure</a></li>
-                        <li class="mnmg"><a href="#">Action</a></li>
-                        <li class="mnmg"><a href="#">Comedy</a></li>
-                        <li class="mnmg"><a href="#">Cooking</a></li>
-                        <li class="mnmg"><a href="#">Doujinshi</a></li>
-                        <li class="mnmg"><a href="#">Drama</a></li>
-                        <li class="mnmg"><a href="#">Ecchi</a></li>
-                        <li class="mnmg"><a href="#">Fantasy</a></li>
-                        <li class="mnmg"><a href="#">Gender Bender</a></li>
-                        <li class="mnmg"><a href="#">Harem</a></li>
-                        <li class="mnmg"><a href="#">Historical</a></li>
-                        <li class="mnmg"><a href="#">Horror</a></li>
-                        <li class="mnmg"><a href="#">Isekai</a></li>
-                        <li class="mnmg"><a href="#">Josei</a></li>
-                        <li class="mnmg"><a href="#">Lolicon</a></li>
-                        <li class="mnmg"><a href="#">Magic</a></li>
-                        <li class="mnmg"><a href="#">Manga</a></li>
-                        <li class="mnmg"><a href="#">Manhua</a></li>
-                        <li class="mnmg"><a href="#">Manhwa</a></li>
-                        <li class="mnmg"><a href="#">Martial Arts</a></li>
-                        <li class="mnmg"><a href="#">Mature</a></li>
-                        <li class="mnmg"><a href="#">Mecha</a></li>
-                        <li class="mnmg"><a href="#">Mind Game</a></li>
-                        <li class="mnmg"><a href="#">Mystery</a></li>
-                        <li class="mnmg"><a href="#">One shot</a></li>
-                        <li class="mnmg"><a href="#">Psychological</a></li>
-                        <li class="mnmg"><a href="#">Recarnation</a></li>
-                        <li class="mnmg"><a href="#">Romance</a></li>
-                        <li class="mnmg"><a href="#">School Life</a></li>
-                        <li class="mnmg"><a href="#">Sci fi</a></li>
-                        <li class="mnmg"><a href="#">Seinen</a></li>
-                        <li class="mnmg"><a href="#">Shotacon</a></li>
-                        <li class="mnmg"><a href="#">Shoujo</a></li>
-                        <li class="mnmg"><a href="#">Slice of Life</a></li>
-                        <li class="mnmg"><a href="#">Shounen</a></li>
-                        <li class="mnmg"><a href="#">Sports</a></li>
-                        <li class="mnmg"><a href="#">Supernatural</a></li>
-                        <li class="mnmg"><a href="#">Tragedy</a></li>
-                        <li class="mnmg"><a href="#">Uncategorized</a></li>
-                        <li class="mnmg"><a href="#">Yaoi</a></li>
-                        <li class="mnmg"><a href="#">Yuri</a></li>
-                    </ul>
-                    <!-- menu bar -->
-                </li>
-                <li class="mnm"><a href="#">ADVENTURE</a></li>
-                <li class="mnm" onclick="searchaction()" id="searchaction"><a href="#" >ACTION</a></li>
-                <li class="mnm"><a href="#">COMEDY</a></li>
-                <li class="mnm"><a href="#">DRAMA</a></li>
-                <li class="mnm"><a href="#">FANTASY</a></li>
-                <li class="mnm"><a href="#">HAREM</a></li>
-                <li class="mnm"><a href="#">HORROR</a></li>
-                <li class="mnm"><a href="#">MANGA</a></li>
-                <li class="mnm"><a href="#">MANHUA</a></li>
-                <li class="mnm"><a href="#">MANHWA</a></li>
-            </ul>
-        </div>
+  function countdown() {
+    countdownElement.textContent = count;
+    count--;
+    if (count < 0) {
+      clearInterval(timer);
+      window.location.href = "https://mangafire.to/read/i-hook-up-with-the-worlds-richest-man-at-the-registry-of-marriages.w5ox6/en/chapter-1";
+    }
+  }
 
-    </section>
-    <section class="mid">
-        <aside class="miadside">
+  countdown(); // Initial call to display the initial count value
 
-        </aside>
-        <div class="postcontent" id="content">
-            <div class="contains"><img src="imgs/conetnt/1.jpg" alt="" class="containfix">
-                <div class="containsde">
-                    Name :- histroAnime<br><br>
-                    Ratings :- 5stars<br><br>
-                    Anime :- Ongoing<br><br>
-                    Action
-                </div>
-            </div>
-            <div class="contains"><img src="imgs/conetnt/2.jpg" alt="" class="containfix">
-                <div class="containsde">
-                    Name :- ModernAnime<br><br>
-                    Ratings :- 5stars<br><br>
-                    Anime :- Ongoing<br><br>
-                    ACTION
-                </div>
-            </div>
-            <div class="contains"><img src="imgs/conetnt/3.jpg" alt="" class="containfix">
-                <div class="containsde">
-                    Name :- MagicalAnime<br><br>
-                    Ratings :- 5stars<br><br>
-                    Anime :- Ongoing<br><br>
-                </div>
-            </div>
-            <div class="contains"><img src="imgs/conetnt/4.jpg" alt="" class="containfix">
-                <div class="containsde">
-                    Name :- HaremAnime<br><br>
-                    Ratings :- 5stars<br><br>
-                    Anime :- Ongoing<br><br>
-                </div>
-            </div>
-            <div class="contains"><img src="imgs/conetnt/5.jpg" alt="" class="containfix">
-                <div class="containsde">
-                    Name :- tragicAnime<br><br>
-                    Ratings :- 5stars<br><br>
-                    Anime :- Ongoing<br><br>
-                </div>
-            </div>
-            <div class="contains"><img src="imgs/conetnt/6.jpg" alt="" class="containfix">
-                <div class="containsde">
-                    Name :- actionAnime<br><br>
-                    Ratings :- 5stars<br><br>
-                    Anime :- Ongoing<br><br>
-                </div>
-            </div>
-            <div class="contains"><img src="imgs/conetnt/7.jpg" alt="" class="containfix">
-                <div class="containsde">
-                    Name :- schoolAnime<br><br>
-                    Ratings :- 5stars<br><br>
-                    Anime :- Ongoing<br><br>
-                </div>
-            </div>
-            <div class="contains"><img src="imgs/conetnt/8.jpg" alt="" class="containfix">
-                <div class="containsde">
-                    Name :- manhuaAnime<br><br>
-                    Ratings :- 5stars<br><br>
-                    Anime :- Ongoing<br><br>
-                </div>
-            </div>
-            <div class="btndiv">
-                <button class="prebtn" id="prevbtn"  type="button" >Previous</button>
-                <button class="nexbtn" id="nextbtn" type="button">Next</button>
-            </div>
-        </div>
-        
-        <aside class="miadside">
+  var timer = setInterval(countdown, 1000); // Update countdown every second
+</script>
 
-        </aside>
-    </section>
-    <footer>
-        <div class="foonav">
-            <ul class="foul">
-                <li class="fnd"><a href="Home.html">HOME</a></li>
-                <li class="fnd"><a href="Blogs.html">BLOGS</a></li>
-                <li class="fnd"><a href="Contact.html">CONTACT</a></li>
-                <li class="fnd"><a href="Cookies Policy">COOKIES POLICY</a></li>
-                <li class="fnd"><a href="About us.html">ABOUT US</a></li>
-            </ul>
-            <div class="copy">
-                &copy; 2022 Mangasuggestion.com | All Right Reserved
-            </div>
-        </div>
-    </footer>
-    <script src="JS/java.js"></script>
-    <script src="../backend/backjava.js"></script>
 </body>
-
 </html>
